@@ -22,6 +22,7 @@
     <ClCompile Include="cApp.cpp" />
     <ClCompile Include="cMain.cpp" />
     <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="InventoryGrid.cpp" />
     <ClCompile Include="ItemFrame.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
@@ -31,8 +32,8 @@
     <ClInclude Include="definedValues.h" />
     <ClInclude Include="IItem.h" />
     <ClInclude Include="Inventory.h" />
+    <ClInclude Include="InventoryGrid.h" />
     <ClInclude Include="ItemFrame.h" />
-    <ClInclude Include="resource.h" />
     <ClInclude Include="Weapon.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
