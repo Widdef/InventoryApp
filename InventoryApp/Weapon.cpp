@@ -18,6 +18,8 @@ Weapon::Weapon(std::wstring name) {
 	this->imagePath = "D:\\Programy\\PO_project\\PO_project\\Debug\\ItemIcon\\test.bmp";
 }
 
+Weapon::~Weapon() {}
+
 std::wstring Weapon::getName()  {
 	return this->name;
 }

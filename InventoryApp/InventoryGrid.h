@@ -26,5 +26,6 @@ public:
 private:
 	int idClickedElement;
 	bool wasClicked = false;
+	int amount = 0;
 };
 

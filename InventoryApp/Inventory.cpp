@@ -2,7 +2,12 @@
 
 
 Inventory::Inventory() {}
-Inventory::~Inventory() {}
+Inventory::~Inventory() {
+	for (auto i : ItemList)
+	{
+		delete i;
+	}
+}
 
 IItem& Inventory::operator[](int index) {
 	return *this->ItemList[index];

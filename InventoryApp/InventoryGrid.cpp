@@ -1,9 +1,9 @@
 #include "InventoryGrid.h"
 
 InventoryGrid::InventoryGrid(wxWindow* parent, int nFieldsX, int nFieldsY) : wxPanel(parent, wxID_ANY) {
-	itemArray = new wxButton * [nFieldsX * nFieldsY];
-	wxGridSizer* grid = new wxGridSizer(nFieldsX, nFieldsY, 10, 10);
-
+	itemArray = new wxButton* [nFieldsX * nFieldsY];
+	wxGridSizer* grid = new wxGridSizer(nFieldsX, nFieldsY, 5, 5);
+	this->amount = nFieldsX * nFieldsY;
 	for (int y = 0; y < nFieldsY; y++) {
 		for (int x = 0; x < nFieldsX; x++) {
 			int id = y * nFieldsX + x;
@@ -24,7 +24,11 @@ InventoryGrid::InventoryGrid(wxWindow* parent, int nFieldsX, int nFieldsY) : wxP
 	grid->Layout();
 }
 
+
+//TODO: Fix memory leaks
 InventoryGrid::~InventoryGrid() {
+	for (int i = 0; i < this->amount; i++)
+		delete itemArray[i];
 	delete[] itemArray;
 	delete inv;
 }
