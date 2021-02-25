@@ -39,6 +39,9 @@
     <ClCompile Include="ItemFrame.cpp">
       <Filter>Source Files\Frames</Filter>
     </ClCompile>
+    <ClCompile Include="equippedItemsPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cApp.h">
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="InventoryGrid.h">
       <Filter>Header Files\Frames</Filter>
+    </ClInclude>
+    <ClInclude Include="equippedItemsPanel.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

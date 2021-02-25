@@ -17,7 +17,7 @@ public:
 public:
 	wxButton** itemArray = nullptr;
 	Inventory* inv = new Inventory();
-	ItemFrame* popUpWindow;
+	ItemFrame* popUpWindow = nullptr;
 
 	void OnButtonClicked(wxCommandEvent& evt);
 	void OnEnterPanel(wxMouseEvent& evt);

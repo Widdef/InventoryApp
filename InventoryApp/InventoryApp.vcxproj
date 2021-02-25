@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="cApp.cpp" />
     <ClCompile Include="cMain.cpp" />
+    <ClCompile Include="equippedItemsPanel.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="InventoryGrid.cpp" />
     <ClCompile Include="ItemFrame.cpp" />
@@ -30,6 +31,7 @@
     <ClInclude Include="cApp.h" />
     <ClInclude Include="cMain.h" />
     <ClInclude Include="definedValues.h" />
+    <ClInclude Include="equippedItemsPanel.h" />
     <ClInclude Include="IItem.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="InventoryGrid.h" />

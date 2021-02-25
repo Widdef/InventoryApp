@@ -2,7 +2,7 @@
 
 InventoryGrid::InventoryGrid(wxWindow* parent, int nFieldsX, int nFieldsY) : wxPanel(parent, wxID_ANY) {
 	itemArray = new wxButton* [nFieldsX * nFieldsY];
-	wxGridSizer* grid = new wxGridSizer(nFieldsX, nFieldsY, 5, 5);
+	wxGridSizer* grid = new wxGridSizer(nFieldsX, nFieldsY, MARGIN_ROW, MARGIN_COL);
 	this->amount = nFieldsX * nFieldsY;
 	for (int y = 0; y < nFieldsY; y++) {
 		for (int x = 0; x < nFieldsX; x++) {
@@ -53,8 +53,10 @@ void InventoryGrid::OnEnterPanel(wxMouseEvent& evt) {
 	int id = evt.GetId() - INVENTORY_GRID_START_ID;
 	const wxPoint pt = wxGetMousePosition();
 	//OutputDebugStringW("Position: " + std::to_wstring(pt.x) + L", " + std::to_wstring(pt.y) + L"\n");
+	//popUpWindow = new ItemFrame(this, inv->GetItem(id)->getName(), wxPoint(pt.x + 40, pt.y - 40), wxSize(100, 200));
 	popUpWindow = new ItemFrame(this, inv->GetItem(id)->getName(), wxPoint(pt.x + 40, pt.y - 40), wxSize(100, 200));
 	popUpWindow->ShowData(inv->GetItem(id));
+	popUpWindow->SetBorder();
 	popUpWindow->Show();
 }
 
