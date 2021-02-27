@@ -42,6 +42,12 @@
     <ClCompile Include="equippedItemsPanel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Armor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="weaponEqCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cApp.h">
@@ -69,6 +75,12 @@
       <Filter>Header Files\Frames</Filter>
     </ClInclude>
     <ClInclude Include="equippedItemsPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Armor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weaponEqCell.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

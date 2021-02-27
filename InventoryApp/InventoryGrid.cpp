@@ -14,8 +14,13 @@ InventoryGrid::InventoryGrid(wxWindow* parent, int nFieldsX, int nFieldsY) : wxP
 			itemArray[id]->Bind(wxEVT_ENTER_WINDOW, &InventoryGrid::OnEnterPanel, this);
 			itemArray[id]->Bind(wxEVT_LEAVE_WINDOW, &InventoryGrid::OnLeavePanel, this);
 
-			Weapon* weapon = new Weapon(L"Position: " + std::to_wstring(id) + L"\n", x, y, "physical");
-			inv->AddItem(static_cast<IItem*>(weapon));
+			IItem* item;
+			if ((y * nFieldsX + x) % 2)
+				item = new Weapon(L"Position (weapon): " + std::to_wstring(id) + L"\n", x, y, "physical");
+			else
+				item = new Armor(L"Position (armor): " + std::to_wstring(id) + L"\n");
+
+			inv->AddItem(static_cast<IItem*>(item));
 			itemArray[id]->SetLabelText(inv->GetItem(id)->getName());
 		}
 	}

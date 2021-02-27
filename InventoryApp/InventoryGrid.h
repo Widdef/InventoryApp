@@ -6,6 +6,7 @@
 #include "Inventory.h"
 #include "Weapon.h"
 #include "ItemFrame.h"
+#include "Armor.h"
 
 
 class InventoryGrid : public wxPanel

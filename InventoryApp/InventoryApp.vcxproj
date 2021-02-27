@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Armor.cpp" />
     <ClCompile Include="cApp.cpp" />
     <ClCompile Include="cMain.cpp" />
     <ClCompile Include="equippedItemsPanel.cpp" />
@@ -26,8 +27,10 @@
     <ClCompile Include="InventoryGrid.cpp" />
     <ClCompile Include="ItemFrame.cpp" />
     <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="weaponEqCell.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Armor.h" />
     <ClInclude Include="cApp.h" />
     <ClInclude Include="cMain.h" />
     <ClInclude Include="definedValues.h" />
@@ -37,6 +40,7 @@
     <ClInclude Include="InventoryGrid.h" />
     <ClInclude Include="ItemFrame.h" />
     <ClInclude Include="Weapon.h" />
+    <ClInclude Include="weaponEqCell.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
